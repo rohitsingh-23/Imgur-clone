@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Imgur</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <!-- <img src="https://i.imgur.com/TMbbd42.png" alt=""> -->
+    <!-- <div class="navbar">
+		<img src="./Images/ImgurLogo.jpeg" alt="">
+  </div> -->
+
+    <header>
+      <nav id="nav">
+        <div class="left">
+          <img
+            src="https://www.linkpicture.com/q/logo-1200-630-removebg-preview.png"
+            alt=""
+          />
+          <a class="Button_upload">
+            <img
+              src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+            />
+            <span class="newPostLabel">New post</span></a
+          >
+        </div>
+
+        <div class="mid">
+          <input
+            type="text"
+            class="searchInput"
+            id="searchInput"
+            placeholder="Images, #tags, @user oh my god!"
+          />
+          <img
+            class="searchBtn"
+            src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"
+          />
+        </div>
+        <div id="debounceBox"></div>
+
+        <div class="right">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 -2 34 34"
+            class="uScaleTransition ProfileNavbar-item"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Comment Leaderboard</title>
+            <g fill="none" fill-rule="evenodd">
+              <path d="M0 0h32v32H0z"></path>
+              <g transform="translate(6.5 3)" stroke="#ffffff" stroke-width="2">
+                <path
+                  d="M4 16.977v7.076l5.5-2.481 5.5 2.481v-7.076l-5.5 1.245L4 16.977z"
+                ></path>
+                <circle cx="9.5" cy="9.5" r="8.5"></circle>
+              </g>
+            </g>
+          </svg>
+
+          <button class="ads">Go Ad-Free</button>
+          <button class="signin">Sign in</button>
+          <button class="signUp">Sign up</button>
+        </div>
+      </nav>
+      <h3 class="quotes">
+        "Hello, is this the Krusty Krab?" "No, this is Imgur"
+      </h3>
+
+      <div class="tags">
+        <div class="comic">
+          <div>
+            <h5>Comic</h5>
+            <h6>FEATURED . 61,378 Posts</h6>
+          </div>
+        </div>
+        <div class="funny">
+          <div>
+            <h5>Funny</h5>
+            <h6>2,697,095 Posts</h6>
+          </div>
+        </div>
+        <div class="memes">
+          <div>
+            <h5>Memes</h5>
+            <h6>571,365 Posts Posts</h6>
+          </div>
+        </div>
+        <div class="gaming">
+          <div>
+            <h5>Gaming</h5>
+            <h6>697,095 Posts</h6>
+          </div>
+        </div>
+        <div class="Staff">
+          <div>
+            <h5>Staff Picks</h5>
+            <h6>6,538 Posts</h6>
+          </div>
+        </div>
+        <div class="aww">
+          <div>
+            <h5>Aww</h5>
+            <h6>763,810 Posts</h6>
+          </div>
+        </div>
+        <div class="oc">
+          <div>
+            <h5>Oc</h5>
+            <h6>39,308 Posts</h6>
+          </div>
+        </div>
+        <div class="science">
+          <div>
+            <h5>Science</h5>
+            <h5>And Tech</h5>
+            <h6>44,955 Posts</h6>
+          </div>
+        </div>
+        <div class="awesome">
+          <div>
+            <h5>Awesome</h5>
+            <h6>751,774 Posts</h6>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="top_back"></div>
+    <div id="container">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
+      <div id="box5"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

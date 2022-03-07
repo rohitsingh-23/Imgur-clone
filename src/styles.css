@@ -1,0 +1,323 @@
+body {
+  font-family: sans-serif;
+  background-color: #2d3035;
+}
+
+.navbar {
+  display: flex;
+}
+.Navbar {
+  display: flex;
+}
+
+.top_back {
+  background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  width: 88vw;
+  /* border: 1px solid green; */
+  justify-content: center;
+  gap: 18px;
+}
+#container > div {
+  /* border: 1px solid blue; */
+  width: 18%;
+}
+.card {
+  /* border-radius: 10px; */
+  margin-bottom: 18px;
+  background-color: #26272b;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card:hover {
+  background-color: #5e6168;
+}
+.card_img {
+  width: 100%;
+}
+.card_title {
+  color: white;
+  padding-left: 10px;
+}
+.linkes-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #474a50; */
+}
+
+.Vote-up,
+.Post-item-stat {
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+
+/* Nav bar */
+
+header {
+  background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  height: 60px;
+  /* padding-left: 20px; */
+  padding-right: 20px;
+  /* border: 1px solid white; */
+}
+nav .left,
+nav .right {
+  display: flex;
+  justify-content: center;
+  /* width: 150px; */
+  /* border: 1px solid white; */
+  align-items: center;
+  gap: 10px;
+}
+nav .left .Button_upload {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  align-items: center;
+  /* border: 1px solid white; */
+  background-color: #1bb76e;
+  padding: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  gap: 10px;
+  height: 35px;
+  color: white;
+  font-family: sans-serif;
+  /* height: ; */
+}
+nav .left .Button_upload img {
+  height: 100%;
+  border: 1px solid white;
+}
+
+nav .left img {
+  height: 60px;
+}
+/* ------------ nav right */
+nav .right {
+  gap: 20px;
+}
+nav .right .ads {
+  background-color: #6432f9;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+nav .right .signin {
+  background-color: transparent;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  /* width: 100px; */
+  color: white;
+  font-weight: bold;
+}
+
+nav .right .signUp {
+  background-color: #1bb76e;
+  height: 35px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 120px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* ---------- nav mid */
+
+nav .mid {
+  /* border: 1px solid white; */
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .mid .searchInput {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border;
+  position: relative;
+  left: 30px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background: rgba(255, 255, 255, 0.205);
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white;
+}
+
+/* ===================== debouncing */
+#debounceBox {
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.719);
+  width: 525px;
+  /* height: 300px; */
+  position: absolute;
+  left: 50%;
+  z-index: 2000;
+  transform: translateX(-60%) translateY(49px);
+  max-height: 300px;
+  overflow: auto;
+}
+
+#debounceBox .p {
+  color: black;
+  font-family: sans-serif;
+  /* border: 1px solid; */
+  padding: 5px;
+  box-sizing: border-box;
+}
+#debounceBox .p:hover {
+  background-color: rgba(255, 255, 255, 0.719);
+}
+
+.quotes {
+  color: #add8ea;
+  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------tags */
+
+.tags {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.tags > div {
+  background-color: teal;
+  display: flex;
+  align-items: flex-end;
+  line-height: 0%;
+  /* justify-content: flex-end; */
+}
+.tags > div > div {
+  /* background-color: teal; */
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-overflow: hidden;
+}
+
+.comic {
+  height: 130px;
+  width: 220px;
+  background-image: url("https://i.imgur.com/1fDftsZ_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.comic > div {
+  background-color: #3a7c89;
+}
+
+.funny {
+  height: 130px;
+  width: 110px;
+  background-image: url("https://i.imgur.com/9r1qCDq_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.funny > div {
+  background-color: #633875;
+}
+
+.memes {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/1z4dgZT_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.memes > div {
+  background-color: #ba519f;
+}
+
+.gaming {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/nrFCOUB_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+
+.gaming > div {
+  background-color: #2b1a5a;
+}
+.Staff {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/DbQMO3A_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.Staff > div {
+  background-color: #132d31;
+}
+.aww {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/avRBRpN_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.aww > div {
+  background-color: #60aebb;
+}
+.oc {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/4LBx79U_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.oc > div {
+  background-color: #ab80b8;
+}
+.science {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  line-height: 0%;
+  background-image: url("https://i.imgur.com/bdRjrrI_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.science > div {
+  background-color: #e47d57;
+}
+.awesome {
+  height: 130px;
+  width: 110px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/4kmYoey_d.jpg?maxwidth=800&shape=thumb&fidelity=high");
+}
+.awesome > div {
+  background-color: #8472bd;
+}
